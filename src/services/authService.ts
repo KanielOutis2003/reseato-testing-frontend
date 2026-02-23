@@ -1,5 +1,5 @@
 import api, { handleApiError } from './api';
-import { User, UserRole } from '../../../shared/types';
+import { User, UserRole } from '@/shared/types';
 
 interface LoginCredentials {
   email: string;

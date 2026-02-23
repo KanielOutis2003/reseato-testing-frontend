@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, Users, MapPin, FileText, X } from 'lucide-react';
-import { Reservation, ReservationStatus } from '../../../../shared/types';
+import { Reservation, ReservationStatus } from '@/shared/types';
 import { Button } from '../common/Button';
 import { format } from 'date-fns';
 
@@ -19,12 +19,12 @@ export const ReservationCard: React.FC<ReservationCardProps> = ({
   showCustomer = false,
 }) => {
   const getStatusBadge = (status: ReservationStatus) => {
-    const styles = {
-      pending: 'status-pending',
-      confirmed: 'status-confirmed',
-      cancelled: 'status-cancelled',
-      completed: 'status-completed',
-      rejected: 'status-cancelled', // Added style for rejected
+    const styles: Record<ReservationStatus, string> = {
+      [ReservationStatus.PENDING]: 'status-pending',
+      [ReservationStatus.CONFIRMED]: 'status-confirmed',
+      [ReservationStatus.CANCELLED]: 'status-cancelled',
+      [ReservationStatus.COMPLETED]: 'status-completed',
+      [ReservationStatus.REJECTED]: 'status-cancelled', // Added style for rejected
     };
 
     return (

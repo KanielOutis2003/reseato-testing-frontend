@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, MapPin, UtensilsCrossed, Sparkles } from 'lucide-react';
-import { Restaurant } from '../../../../shared/types';
+import { Restaurant } from '@/shared/types';
 import restaurantService from '../../services/restaurantService';
 import authService from '../../services/authService';
 import { RestaurantCard } from '../../components/restaurant/RestaurantCard';
@@ -28,7 +28,6 @@ export const CustomerDashboardPage: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCuisine, setSelectedCuisine] = useState('All');
-  const [showFilters, setShowFilters] = useState(false);
   const [activeMall, setActiveMall] = useState<'SM City' | 'SM Seaside' | null>(null);
   const [suggestions, setSuggestions] = useState<Restaurant[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);

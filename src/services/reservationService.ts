@@ -1,5 +1,5 @@
 import api, { handleApiError } from './api';
-import { Reservation, CreateReservationDTO, TimeSlot, ReservationStatus } from '../../../shared/types';
+import { Reservation, CreateReservationDTO, TimeSlot, ReservationStatus } from '@/shared/types';
 
 class ReservationService {
   async createReservation(data: CreateReservationDTO): Promise<Reservation> {

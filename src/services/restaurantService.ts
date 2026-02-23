@@ -1,5 +1,5 @@
 import api, { handleApiError } from './api';
-import { Restaurant, RestaurantFilters } from '../../../shared/types';
+import { Restaurant, RestaurantFilters } from '@/shared/types';
 
 class RestaurantService {
   async getAllRestaurants(filters?: RestaurantFilters): Promise<Restaurant[]> {

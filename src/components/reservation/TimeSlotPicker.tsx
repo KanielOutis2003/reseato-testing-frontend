@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, CheckCircle } from 'lucide-react';
-import { TimeSlot } from '../../../../shared/types';
+import { TimeSlot } from '@/shared/types';
 import reservationService from '../../services/reservationService';
 
 interface TimeSlotPickerProps {

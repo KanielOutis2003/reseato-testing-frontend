@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, Clock, Star, Phone, Mail, Calendar, ArrowLeft } from 'lucide-react';
-import { Restaurant } from '../../../../shared/types';
+import { Restaurant } from '@/shared/types';
 import restaurantService from '../../services/restaurantService';
 import reservationService from '../../services/reservationService';
 import authService from '../../services/authService';

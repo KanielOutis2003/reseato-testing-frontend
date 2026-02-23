@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, UserRole } from '../../../../shared/types';
+import { User, UserRole } from '@/shared/types';
 import authService from '../../services/authService';
 import notificationService, { Notification } from '../../services/notificationService';
 import { Button } from './Button';

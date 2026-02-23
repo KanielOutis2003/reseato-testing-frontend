@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Users, Utensils, Calendar, DollarSign, Search, Filter, CheckCircle, XCircle, AlertCircle, Eye } from 'lucide-react';
+import { Utensils, Calendar, DollarSign, Search, CheckCircle } from 'lucide-react';
 import adminService, { DashboardStats, AdminReservation, AdminRestaurant, AdminUser } from '../../services/adminService';
 import { Card } from '../../components/common/Card';
 import { Loader } from '../../components/common/Loader';
@@ -163,6 +163,7 @@ export const AdminDashboard: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1">
             <Input 
+              label="Search"
               placeholder="Search user or restaurant..." 
               leftIcon={<Search className="w-4 h-4" />}
               value={reservationFilter.search}

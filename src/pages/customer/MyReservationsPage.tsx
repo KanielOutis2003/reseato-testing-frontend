@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Filter } from 'lucide-react';
-import { Reservation, ReservationStatus } from '../../../../shared/types';
+import { Reservation, ReservationStatus } from '@/shared/types';
 import reservationService from '../../services/reservationService';
 import { ReservationCard } from '../../components/reservation/ReservationCard';
 import toast, { Toaster } from 'react-hot-toast';

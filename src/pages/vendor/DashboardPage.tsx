@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, CheckCircle, XCircle, Users, TrendingUp, PieChart } from 'lucide-react';
-import { Reservation, ReservationStatus } from '../../../../shared/types';
+import { Reservation, ReservationStatus } from '@/shared/types';
 import restaurantService from '../../services/restaurantService';
 import reservationService from '../../services/reservationService';
 import { ReservationCard } from '../../components/reservation/ReservationCard';
